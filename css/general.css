@@ -1,0 +1,65 @@
+/*
+-------------  TYPOGRAPHY SYSTEM ----------
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+- Line heights
+Default: 1
+Small: 1.05
+Medium: 1.2
+Paragraph default: 1.6
+
+- Letter spacing
+-0.5px
+0.75px
+
+ ----------  WHITESPACE SYSTEM ----------
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/ 
+
+
+:root {
+
+/* ----------- COLORS ------------ */
+    --primary-color: #f03e3e;
+
+    --tint-color-1: #ffe3e3;
+    --tint-color-2: #ffc9c9;
+    --tint-color-3: #ff8787;
+    
+    --shade-color-1: #e03131;
+    --shade-color-2: #c92a2a;
+
+    --grey-color-1:#888;
+    --grey-color-2:##767676;   /*(lightest grey allowed on #fff) */
+    --grey-color-3:#6f6f6f;
+    --grey-color-4:#555;
+    --grey-color-5:#333;
+
+/* ---------- SHADOWS ---------- */
+
+--shadow-1: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+
+/* ---------- BORDER-RADIUS ---------- */
+
+--default-border: border-radius: 9px;
+--medium-border: border-radius: 11px;
+
+  }
+
+
+
+
+
+
+
+
