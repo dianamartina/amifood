@@ -24,42 +24,198 @@ Paragraph default: 1.6
 
 - Spacing system (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-*/ 
-
+*/
 
 :root {
+  /* ----------- COLORS ------------ */
+  --white: #fff;
+  --primary-color: #f03e3e;
 
-/* ----------- COLORS ------------ */
-    --primary-color: #f03e3e;
+  --tint-color-1: #fff5f5;
+  --tint-color-2: #f7dcdc;
+  --tint-color-3: #ff8787;
 
-    --tint-color-1: #ffe3e3;
-    --tint-color-2: #ffc9c9;
-    --tint-color-3: #ff8787;
-    
-    --shade-color-1: #e03131;
-    --shade-color-2: #c92a2a;
+  --shade-color-1: #e03131;
+  --shade-color-2: #c92a2a;
 
-    --grey-color-1:#888;
-    --grey-color-2:##767676;   /*(lightest grey allowed on #fff) */
-    --grey-color-3:#6f6f6f;
-    --grey-color-4:#555;
-    --grey-color-5:#333;
+  --secondary-color: #3df0b4;
 
-/* ---------- SHADOWS ---------- */
+  --grey-color-0: #ddd;
+  --grey-color-1: #888;
+  --grey-color-2: ##767676; /*(lightest grey allowed on #fff) */
+  --grey-color-3: #6f6f6f;
+  --grey-color-4: #555;
+  --grey-color-5: #333;
 
---shadow-1: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  /* ---------- SHADOWS ---------- */
 
-/* ---------- BORDER-RADIUS ---------- */
+  --shadow-1: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  --shadow-2: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
 
---default-border: border-radius: 9px;
---medium-border: border-radius: 11px;
+  /* ---------- BORDER-RADIUS ---------- */
 
-  }
+  --default-border: 9px;
+  --medium-border: 11px;
+  --big-border: 22px;
+}
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
+html {
+  /* font-size: 10px; we don't use px bacause will set the size(to 10px) no matter if the user changes his settings in browser*/
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+}
 
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: var(--grey-color-4);
+}
 
+/* ---------- General components ---------- */
 
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
 
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+  margin-bottom: 9.6rem;
+}
 
+/* All grids that are more then one in a section will have margin-bottom */
+/* .grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+} */
 
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--center-v {
+  align-items: center;
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  font-weight: 700;
+  color: var(--grey-color-5);
+  letter-spacing: -0.5px;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 1.1;
+  margin-bottom: 4.8rem;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--shade-color-1);
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
+
+/* ---------- Utilities classes ---------- */
+
+.margin-right-sm {
+  margin-right: 1.6rem;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem;
+}
+
+strong {
+  font-weight: 500;
+}
+
+/* ---------- Buttons ---------- */
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  border-radius: var(--default-border);
+}
+
+.btn--full:link,
+.btn--full:visited {
+  background-color: var(--primary-color);
+  color: var(--white);
+  transition: all 0.3s;
+}
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: var(--shade-color-2);
+  color: var(--white);
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: #fff;
+  color: var(--grey-color-4);
+  box-shadow: inset 0 0 0 3px #fff;
+  transition: all 0.3s;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  box-shadow: inset 0 0 0 3px #fff; /* creates a border*/
+  background-color: var(--tint-color-1);
+}
+
+.link:link,
+.link:visited {
+  display: inline-block;
+  color: var(--primary-color);
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: var(--shade-color-2);
+  border-bottom: 1px solid transparent;
+}
