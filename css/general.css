@@ -33,10 +33,12 @@ Paragraph default: 1.6
 
   --tint-color-1: #fff5f5;
   --tint-color-2: #f7dcdc;
+  --tint-color-4: #f1cfcf;
   --tint-color-3: #ff8787;
 
   --shade-color-1: #e03131;
   --shade-color-2: #c92a2a;
+  --shade-color-3: #500606;
 
   --secondary-color: #3df0b4;
 
@@ -57,6 +59,7 @@ Paragraph default: 1.6
   --default-border: 9px;
   --medium-border: 11px;
   --big-border: 22px;
+  --biggest-border: 30px;
 }
 
 * {
@@ -166,7 +169,7 @@ strong {
 }
 
 /* ---------- Buttons ---------- */
-
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -175,6 +178,9 @@ strong {
   font-weight: 600;
   padding: 1.6rem 3.2rem;
   border-radius: var(--default-border);
+  /* Only for .btn because is a button not a link */
+  border: none;
+  cursor: pointer;
 }
 
 .btn--full:link,
@@ -202,6 +208,26 @@ strong {
 .btn--outline:active {
   box-shadow: inset 0 0 0 3px #fff; /* creates a border*/
   background-color: var(--tint-color-1);
+}
+
+.btn--form {
+  background-color: var(--primary-color);
+  color: var(--white);
+  align-self: end;
+  padding: 1.2rem;
+  transition: all 0.3s;
+}
+
+.btn--form:hover {
+  background-color: var(--white);
+  color: var(--shade-color-2);
+}
+
+*:focus {
+  outline: none;
+  /* outline: 4px dotted var(--primary-color); */
+  /* outline-offset: 8px; */
+  box-shadow: 0 0 0 0.6rem var(--tint-color-3);
 }
 
 .link:link,
