@@ -9,7 +9,7 @@
   padding: 0 4.8rem;
 }
 .logo {
-  height: 6.2rem;
+  height: 8.6rem;
 }
 
 /* ---------- Navigation ---------- */
@@ -368,7 +368,7 @@
 
 .section-pricing {
   background-color: var(--tint-color-1);
-  padding: 9.6rem 0;
+  padding: 4.8rem 0;
 }
 
 .princing-plan {
@@ -474,7 +474,7 @@
 /* ---------- Priceing section ---------- */
 
 .section-cta {
-  padding: 9.6rem 0;
+  padding: 12.8rem 0;
 }
 
 .cta {
@@ -501,6 +501,12 @@
   margin-bottom: 3.2rem;
 }
 
+.cta .heading-secondary span {
+  color: var(--shade-color-2);
+  padding: 0 1rem;
+  letter-spacing: 0.4rem;
+  font-weight: 500;
+}
 .cta-text {
   font-size: 1.8rem;
   line-height: 1.8;
@@ -549,4 +555,82 @@
 .cta *:focus {
   outline: none;
   box-shadow: 0 0 0 0.6rem #fababa;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  padding: 9.6rem 0;
+  border-top: 1px solid var(--grey-color-00);
+}
+
+.grid--footer {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+  margin-bottom: 0;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-logo {
+  display: block;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.copyright,
+.extra-resouces-link {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: var(--grey-color-2);
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.address {
+  margin-bottom: 2.4rem;
+  font-size: 1.4rem;
+  line-height: 1.4;
+}
+
+.address-tel-email {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: var(--grey-color-2);
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: var(--grey-color-4);
 }
