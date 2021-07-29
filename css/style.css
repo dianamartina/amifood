@@ -7,6 +7,7 @@
   background-color: var(--tint-color-1);
   height: 9.6rem;
   padding: 0 4.8rem;
+  position: relative; /* to set the position absolute to the menu */
 }
 .logo {
   height: 8.6rem;
@@ -17,7 +18,7 @@
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 3.2rem;
+  gap: 4.8rem;
 }
 
 .main-nav-link:link,
@@ -48,6 +49,27 @@
   background-color: var(--shade-color-2);
 }
 
+/* ---------- Navigation mobile ---------- */
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: var(--grey-color-5);
+}
+
+/* we don't display the close button */
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
 /* ---------- Hero section ---------- */
 
 .section-hero {
@@ -57,7 +79,7 @@
 
 /* hero section is bigger then the container to look better */
 .hero {
-  max-width: 130rem;
+  max-width: 120rem;
   margin: 0 auto;
   padding: 0 3.2rem;
   display: grid;
@@ -136,7 +158,7 @@
 
 /* ---------- How it works ---------- */
 .section-how {
-  padding: 9.6rem 0;
+  padding: 9.6rem 0 0;
 }
 
 .step-number {
@@ -264,6 +286,10 @@
   gap: 0.4rem;
 }
 
+.diets {
+  padding-left: 2rem;
+}
+
 .tag {
   display: inline-block;
   padding: 0.4rem 0.8rem;
@@ -301,6 +327,7 @@
   display: flex;
   align-items: center;
   gap: 1.6rem;
+  line-height: 1.2;
 }
 
 .list-icon {
@@ -318,7 +345,7 @@
 }
 
 .testimonials-container {
-  padding: 9.6rem;
+  padding: 8rem;
 }
 
 .testimonials {
@@ -368,30 +395,30 @@
 
 .section-pricing {
   background-color: var(--tint-color-1);
-  padding: 4.8rem 0;
+  padding: 9.6rem 0 4.8rem;
 }
 
-.princing-plan {
+.pricing-plan {
   border-top-left-radius: var(--big-border);
   border-bottom-right-radius: var(--big-border);
   border: 2px solid var(--tint-color-2);
   width: 75%;
 }
 
-.princing-plan--starter {
+.pricing-plan--starter {
   background-color: var(--tint-color-1);
   justify-self: end;
   padding: 4.6rem;
 }
 
-.princing-plan--complete {
+.pricing-plan--complete {
   background-color: var(--white);
   padding: 4.8rem;
   position: relative;
   overflow: hidden;
 }
 
-.princing-plan--complete::after {
+.pricing-plan--complete::after {
   content: "Best value";
   position: absolute;
   top: 6%;
@@ -581,12 +608,12 @@
 .social-links {
   list-style: none;
   display: flex;
-  gap: 2.4rem;
+  gap: 3.6rem;
 }
 
 .social-icon {
-  height: 2.4rem;
-  width: 2.4rem;
+  height: 3rem;
+  width: 3rem;
 }
 
 .copyright,
@@ -602,8 +629,13 @@
   margin-bottom: 4rem;
 }
 
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
 .address {
-  margin-bottom: 2.4rem;
   font-size: 1.4rem;
   line-height: 1.4;
 }

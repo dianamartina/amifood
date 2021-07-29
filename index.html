@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="css/general.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/queries.css" />
 
     <!-- Adding ionicons -->
     <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
@@ -30,6 +31,10 @@
 
             </ul>
         </nav>
+        <button class="btn-mobile-nav">
+            <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+            <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
     </header>
 
     <main>
@@ -41,7 +46,7 @@
                         nostrum
                         corrupti laudantium, delectus officiis incidunt. Dolore ea culpa ab perspiciatis.</p>
                     <a href="#" class="btn btn--full margin-right-sm">Start eating well</a>
-                    <a href="#" class="btn btn--outline">Learn more &rarr;</a>
+                    <a href="#" class="btn btn--outline">Learn more </a>
                     <div class="delivered-meals">
                         <div class="delivered-imgs">
                             <img src="img/customer-1.jpg" alt="Customer photo">
@@ -232,7 +237,7 @@
                         <img class="testimonial-img" alt="Customer photo Ann Brown" src="img/customer-1.jpg" />
                         <blockquote class="testimonial-text">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam officiis necessitatibus magni
-                            numquam rerum fugiat odio illo aut saepe ipsa...
+                            numquam rerum ...
                         </blockquote>
                         <p class="testimonial-name">&mdash; Ann Brown</p>
                     </figure>
@@ -240,7 +245,7 @@
                         <img class="testimonial-img" alt="Customer photo Ina Young" src="img/customer-3.jpg" />
                         <blockquote class="testimonial-text">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam officiis necessitatibus magni
-                            numquam rerum fugiat odio illo aut saepe ipsa...
+                            numquam rerum ...
                         </blockquote>
                         <p class="testimonial-name">&mdash; Ina Young</p>
                     </figure>
@@ -248,7 +253,7 @@
                         <img class="testimonial-img" alt="Customer photo Chi Yun" src="img/customer-2.jpg" />
                         <blockquote class="testimonial-text">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam officiis necessitatibus magni
-                            numquam rerum fugiat odio illo aut saepe ipsa...
+                            numquam rerum ...
                         </blockquote>
                         <p class="testimonial-name">&mdash; Chi Yun</p>
                     </figure>
@@ -256,7 +261,7 @@
                         <img class="testimonial-img" alt="Customer photo Dave Smith" src="img/customer-5.jpg" />
                         <blockquote class="testimonial-text">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam officiis necessitatibus magni
-                            numquam rerum fugiat odio illo aut saepe ipsa...
+                            numquam rerum ...
                         </blockquote>
                         <p class="testimonial-name">&mdash; Dave Smith</p>
                     </figure>
@@ -287,6 +292,18 @@
                 <figure class="figure gallery-item">
                     <img src="img/8.jpg" alt="Photo meal">
                 </figure>
+                <figure class="figure gallery-item">
+                    <img src="img/2.jpg" alt="Photo meal">
+                </figure>
+                <figure class="figure gallery-item">
+                    <img src="img/1.jpg" alt="Photo meal">
+                </figure>
+                <figure class="figure gallery-item">
+                    <img src="img/3.jpg" alt="Photo meal">
+                </figure>
+                <figure class="figure gallery-item">
+                    <img src="img/4.jpg" alt="Photo meal">
+                </figure>
 
 
             </div>
@@ -300,7 +317,7 @@
             </div>
 
             <div class="container grid grid--2-cols margin-bottom-md">
-                <div class="princing-plan princing-plan--starter">
+                <div class="pricing-plan pricing-plan--starter">
                     <header class="plan-header">
                         <p class="plan-name">Starter</p>
                         <p class="plan-price"><span>$</span>299</p>
@@ -327,7 +344,7 @@
                         <a href="#" class="btn btn--full">Start eating well</a>
                     </div>
                 </div>
-                <div class="princing-plan princing-plan--complete">
+                <div class="pricing-plan pricing-plan--complete">
                     <header class="plan-header">
                         <p class="plan-name">Complete</p>
                         <p class="plan-price"><span>$</span>550</p>
@@ -448,23 +465,7 @@
                     <img class="logo" alt="Amifood logo" src="img/logo.svg" />
                 </a>
 
-                <ul class="social-links">
-                    <li>
-                        <a class="footer-link" href="#">
-                            <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="footer-link" href="#">
-                            <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="footer-link" href="#">
-                            <ion-icon class="social-icon" name="logo-twitter"></ion-icon>
-                        </a>
-                    </li>
-                </ul>
+
 
                 <p class="extra-resouces-link"> Illustration are provided by <a href="https://storyset.com"
                         class="link">Storyset</a>
@@ -483,9 +484,28 @@
                         400 Harrison St., 2nd Floor, San Francisco, CA 94107
                     </p>
                     <p class="address-tel-email">
-                        <a class="footer-link" href="tel:333-201-6370">333-201-6370</a><br />
+                        <a class="footer-link" href="tel:333-201-6370">333-201-6370</a>
+                    </p>
+                    <p class="address-tel-email">
                         <a class="footer-link" href="mailto:office@amifood.com">office@amifood.com</a>
                     </p>
+                    <ul class="social-links">
+                        <li>
+                            <a class="footer-link" href="#">
+                                <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">
+                                <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">
+                                <ion-icon class="social-icon" name="logo-twitter"></ion-icon>
+                            </a>
+                        </li>
+                    </ul>
                 </address>
             </div>
 
