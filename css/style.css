@@ -10,7 +10,7 @@
   position: relative; /* to set the position absolute to the menu */
 }
 .logo {
-  height: 8.6rem;
+  height: 6.8rem;
 }
 
 /* ---------- Navigation ---------- */
@@ -68,6 +68,25 @@
 /* we don't display the close button */
 .icon-mobile-nav[name="close-outline"] {
   display: none;
+}
+
+/* ---------- Sticky navigation ---------- */
+/* we apply the properties below only if .sticky calss is a parent */
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 9rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.97);
+  z-index: 9999;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+
+.sticky .section-hero {
+  margin-top: 9.6rem; /* add a margin top because is a jump at sticky nav so we have to compensate it */
 }
 
 /* ---------- Hero section ---------- */
@@ -197,8 +216,8 @@
   top: 50%;
   left: 50%;
   transform-origin: center;
-  height: 110%;
-  width: 55%;
+  height: 120%;
+  width: 60%;
   z-index: -1;
 }
 .step-img-back-right::before {
@@ -211,8 +230,6 @@
 
 .step-img-back-right::after,
 .step-img-back-left::after {
-  height: 120%;
-  width: 60%;
   z-index: -2;
   background-color: var(--grey-color-0);
 }
@@ -342,6 +359,8 @@
   display: grid;
   grid-template-columns: 55fr 45fr;
   align-items: center;
+  max-width: 140rem;
+  margin: 0 auto;
 }
 
 .testimonials-container {
@@ -520,7 +539,7 @@
 }
 
 .cta-text-box {
-  padding: 4.8rem 6.4rem 6.4rem;
+  padding: 6.4rem;
 }
 
 .cta .heading-secondary {
@@ -541,8 +560,9 @@
 }
 
 .cta-img-box {
-  background-image: url("../img/Eating\ together-pana.svg");
+  background-image: url("../img/illustrations/cta-img.svg");
   background-position: center;
+  background-size: contain;
   background-repeat: no-repeat;
   margin-right: 3.2rem;
 }
@@ -664,5 +684,5 @@
 
 .footer-link:hover,
 .footer-link:active {
-  color: var(--grey-color-4);
+  color: var(--shade-color-1);
 }

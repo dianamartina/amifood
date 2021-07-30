@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Amifood " />
+    <link rel="icon" href="img/favicon.png" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="css/general.css" />
@@ -15,20 +17,25 @@
     <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
 
-    <title>Document</title>
+    <!-- Script to implement smooth scroll in Safari -->
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+    <script defer src="js/script.js"></script>
+
+    <title>Amifood &mdash; Food delivery</title>
 </head>
 
 <body>
     <header class="header">
-        <img src="img/logo.svg" class="logo" alt="Amifood logo">
+        <a href="#">
+            <img src="img/logo.svg" class="logo" alt="Amifood logo">
+        </a>
         <nav class="main-nav">
             <ul class="main-nav-list">
-                <li><a class="main-nav-link" href="#">How it works</a></li>
-                <li><a class="main-nav-link" href="#">Meals</a></li>
-                <li><a class="main-nav-link" href="#">Testimonials</a></li>
-                <li><a class="main-nav-link" href="#">Pricing</a></li>
-                <li><a class="main-nav-link nav-cta" href="#">Try for free</a></li>
-
+                <li><a class="main-nav-link" href="#how">How it works</a></li>
+                <li><a class="main-nav-link" href="#meals">Meals</a></li>
+                <li><a class="main-nav-link" href="#testimonials">Testimonials</a></li>
+                <li><a class="main-nav-link" href="#pricing">Pricing</a></li>
+                <li><a class="main-nav-link nav-cta" href="#cta">Try for free</a></li>
             </ul>
         </nav>
         <button class="btn-mobile-nav">
@@ -45,22 +52,22 @@
                     <p class="hero-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat
                         nostrum
                         corrupti laudantium, delectus officiis incidunt. Dolore ea culpa ab perspiciatis.</p>
-                    <a href="#" class="btn btn--full margin-right-sm">Start eating well</a>
-                    <a href="#" class="btn btn--outline">Learn more </a>
+                    <a href="#cta" class="btn btn--full margin-right-sm">Start eating well</a>
+                    <a href="#how" class="btn btn--outline">Learn more </a>
                     <div class="delivered-meals">
                         <div class="delivered-imgs">
-                            <img src="img/customer-1.jpg" alt="Customer photo">
-                            <img src="img/customer-2.jpg" alt="Customer photo">
-                            <img src="img/customer-3.jpg" alt="Customer photo">
-                            <img src="img/customer-4.jpg" alt="Customer photo">
-                            <img src="img/customer-5.jpg" alt="Customer photo">
-                            <img src="img/customer-6.jpg" alt="Customer photo">
+                            <img src="img/customer/customer-1.jpg" alt="Customer photo">
+                            <img src="img/customer/customer-2.jpg" alt="Customer photo">
+                            <img src="img/customer/customer-3.jpg" alt="Customer photo">
+                            <img src="img/customer/customer-4.jpg" alt="Customer photo">
+                            <img src="img/customer/customer-5.jpg" alt="Customer photo">
+                            <img src="img/customer/customer-6.jpg" alt="Customer photo">
                         </div>
                         <p class="delivered-text"><span>200,000+ </span>delivered meals last year!</p>
                     </div>
                 </div>
                 <div class="hero-img-box">
-                    <img src="img/time-amico.svg" class="hero-img" alt="Background food image">
+                    <img src="img/illustrations/hero.svg" class="hero-img" alt="Background food image">
                 </div>
             </div>
         </section>
@@ -68,16 +75,16 @@
             <div class="container">
                 <h2 class="heading-featured-in">As featured in</h2>
                 <div class="logos">
-                    <img src="img/techcrunch.png" alt="Techcrunch logo" />
-                    <img src="img/business-insider.png" alt="Business Insider logo" />
-                    <img src="img/the-new-york-times.png" alt="The New York Times logo" />
-                    <img src="img/forbes.png" alt="Forbes logo" />
-                    <img src="img/usa-today.png" alt="USA Today logo" />
+                    <img src="img/companies/techcrunch.png" alt="Techcrunch logo" />
+                    <img src="img/companies/business-insider.png" alt="Business Insider logo" />
+                    <img src="img/companies/the-new-york-times.png" alt="The New York Times logo" />
+                    <img src="img/companies/forbes.png" alt="Forbes logo" />
+                    <img src="img/companies/usa-today.png" alt="USA Today logo" />
                 </div>
             </div>
         </section>
 
-        <section class="section-how">
+        <section class="section-how" id="how">
             <div class="container ">
                 <span class="subheading">How it works</span>
                 <h2 class="heading-secondary">Delivery in 3 simple steps</h2>
@@ -94,11 +101,11 @@
                         corrupti temporibus voluptatum praesentium! Cum!</p>
                 </div>
                 <div class="step-img-box step-img-back-right">
-                    <img src="img/01-plan.svg" class="step-img" alt="phone app preference selection">
+                    <img src="img/illustrations/01-plan.svg" class="step-img" alt="phone app preference selection">
                 </div>
                 <!-- STEP 02 -->
                 <div class="step-img-box step-img-back-left">
-                    <img src="img/02-plan.svg" class="step-img" alt="phone app preference selection">
+                    <img src="img/illustrations/02-plan.svg" class="step-img" alt="phone app preference selection">
                 </div>
                 <div class="step-text-box">
                     <p class="step-number">02</p>
@@ -119,14 +126,14 @@
                         enim dicta molestias ut similique adipisci facilis, provident iste. Aliquam, cumque debitis.</p>
                 </div>
                 <div class="step-img-box step-img-back-right">
-                    <img src="img/03-plan.svg" class="step-img" alt="phone app preference selection">
+                    <img src="img/illustrations/03-plan.svg" class="step-img" alt="phone app preference selection">
                 </div>
             </div>
 
         </section>
 
-        <section class="section-meals">
-            <div class="container center-text">
+        <section class="section-meals" id="meals">
+            <div class="container ">
                 <span class="subheading">Meals</span>
                 <h2 class="heading-secondary">
                     Amifood AI chooses from 3,000+ recipes
@@ -228,13 +235,13 @@
                 <a href="#" class="link">See all recepies &rarr;</a>
             </div>
         </section>
-        <section class="section-testimonials ">
+        <section class="section-testimonials" id="testimonials">
             <div class="testimonials-container">
                 <span class="subheading">Testimonials</span>
                 <h2 class="heading-secondary">After you try it, you can't go back</h2>
                 <div class="testimonials">
                     <figure class="testimonial">
-                        <img class="testimonial-img" alt="Customer photo Ann Brown" src="img/customer-1.jpg" />
+                        <img class="testimonial-img" alt="Customer photo Ann Brown" src="img/customer/customer-1.jpg" />
                         <blockquote class="testimonial-text">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam officiis necessitatibus magni
                             numquam rerum ...
@@ -242,7 +249,7 @@
                         <p class="testimonial-name">&mdash; Ann Brown</p>
                     </figure>
                     <figure class="testimonial">
-                        <img class="testimonial-img" alt="Customer photo Ina Young" src="img/customer-3.jpg" />
+                        <img class="testimonial-img" alt="Customer photo Ina Young" src="img/customer/customer-3.jpg" />
                         <blockquote class="testimonial-text">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam officiis necessitatibus magni
                             numquam rerum ...
@@ -250,7 +257,7 @@
                         <p class="testimonial-name">&mdash; Ina Young</p>
                     </figure>
                     <figure class="testimonial">
-                        <img class="testimonial-img" alt="Customer photo Chi Yun" src="img/customer-2.jpg" />
+                        <img class="testimonial-img" alt="Customer photo Chi Yun" src="img/customer/customer-2.jpg" />
                         <blockquote class="testimonial-text">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam officiis necessitatibus magni
                             numquam rerum ...
@@ -258,7 +265,8 @@
                         <p class="testimonial-name">&mdash; Chi Yun</p>
                     </figure>
                     <figure class="testimonial">
-                        <img class="testimonial-img" alt="Customer photo Dave Smith" src="img/customer-5.jpg" />
+                        <img class="testimonial-img" alt="Customer photo Dave Smith"
+                            src="img/customer/customer-5.jpg" />
                         <blockquote class="testimonial-text">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam officiis necessitatibus magni
                             numquam rerum ...
@@ -269,46 +277,46 @@
             </div>
             <div class="gallery">
                 <figure class="figure gallery-item">
-                    <img src="img/1.jpg" alt="Photo meal">
+                    <img src="img/gallery/1.jpg" alt="Photo meal">
                 </figure>
                 <figure class="figure gallery-item">
-                    <img src="img/2.jpg" alt="Photo meal">
+                    <img src="img/gallery/2.jpg" alt="Photo meal">
                 </figure>
                 <figure class="figure gallery-item">
-                    <img src="img/3.jpg" alt="Photo meal">
+                    <img src="img/gallery/3.jpg" alt="Photo meal">
                 </figure>
                 <figure class="figure gallery-item">
-                    <img src="img/4.jpg" alt="Photo meal">
+                    <img src="img/gallery/4.jpg" alt="Photo meal">
                 </figure>
                 <figure class="figure gallery-item">
-                    <img src="img/5.jpg" alt="Photo meal">
+                    <img src="img/gallery/5.jpg" alt="Photo meal">
                 </figure>
                 <figure class="figure gallery-item">
-                    <img src="img/6.jpg" alt="Photo meal">
+                    <img src="img/gallery/6.jpg" alt="Photo meal">
                 </figure>
                 <figure class="figure gallery-item">
-                    <img src="img/7.jpg" alt="Photo meal">
+                    <img src="img/gallery/7.jpg" alt="Photo meal">
                 </figure>
                 <figure class="figure gallery-item">
-                    <img src="img/8.jpg" alt="Photo meal">
+                    <img src="img/gallery/8.jpg" alt="Photo meal">
                 </figure>
                 <figure class="figure gallery-item">
-                    <img src="img/2.jpg" alt="Photo meal">
+                    <img src="img/gallery/9.jpg" alt="Photo meal">
                 </figure>
                 <figure class="figure gallery-item">
-                    <img src="img/1.jpg" alt="Photo meal">
+                    <img src="img/gallery/10.jpg" alt="Photo meal">
                 </figure>
                 <figure class="figure gallery-item">
-                    <img src="img/3.jpg" alt="Photo meal">
+                    <img src="img/gallery/11.jpg" alt="Photo meal">
                 </figure>
                 <figure class="figure gallery-item">
-                    <img src="img/4.jpg" alt="Photo meal">
+                    <img src="img/gallery/12.jpg" alt="Photo meal">
                 </figure>
 
 
             </div>
         </section>
-        <section class="section-pricing">
+        <section class="section-pricing" id="pricing">
             <div class="container">
                 <span class="subheading">Pricing</span>
                 <h2 class="heading-secondary">
@@ -416,7 +424,7 @@
                 </div>
             </div>
         </section>
-        <section class="section-cta">
+        <section class="section-cta" id="cta">
             <div class="container ">
                 <div class="cta">
                     <div class="cta-text-box">
