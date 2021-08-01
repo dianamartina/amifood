@@ -46,7 +46,7 @@ Paragraph default: 1.6
   --grey-color-00: #f5f5f5;
   --grey-color-0: #ddd;
   --grey-color-1: #888;
-  --grey-color-2: ##767676; /*(lightest grey allowed on #fff) */
+  --grey-color-2: #767676; /*(lightest grey allowed on #fff) */
   --grey-color-3: #6f6f6f;
   --grey-color-4: #555;
   --grey-color-5: #333;
