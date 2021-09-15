@@ -172,7 +172,7 @@
 .logos img {
   height: 3.2rem;
   filter: brightness(0); /* all the images turn to black */
-  opacity: 50%; /* we turn black to grey */
+  opacity: 50%; /* turn black to grey */
 }
 
 /* ---------- How it works ---------- */
@@ -685,4 +685,13 @@
 .footer-link:hover,
 .footer-link:active {
   color: var(--shade-color-1);
+}
+
+.logo-DM {
+  height: 1.8rem;
+  width: auto;
+  display: inline-block;
+  vertical-align: text-bottom;
+  padding-left: 0.4rem;
+  opacity: 0.6;
 }
