@@ -1,5 +1,7 @@
 # Amifood delivery
 
+Site is published at: https://dianamartina.github.io/amifood/
+
 This project it'a an responsive modern website for a fictive food delivery company, that create and deliver customer healthy meal plans.
 The marketing website uses vanilla HTML5(semantic and accessible), CSS3(including flexbox and CSS Grid for layout ) and some interactive elements in JavaScript.
 
@@ -18,5 +20,3 @@ The website is divided into the following sections :
 - Pricing + features
 - CTA
 - Footer
-
-Site is published at: https://dianamartina.github.io/amifood/
